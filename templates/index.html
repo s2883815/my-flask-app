@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+    <h1 class="fw-bold">Welcome to the Prescription Portal</h1>
+    <p class="lead">Upload prescriptions and search for recommended medicines</p>
+    <a href="{{ url_for('search_prescriptions') }}" class="btn btn-success btn-lg">🔍 Search Prescriptions</a>
+    <a href="{{ url_for('upload_prescriptions') }}" class="btn btn-outline-success btn-lg">⬆️ Upload Prescription</a>
+</div>
+{% endblock %}
